@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("./images/download.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: blue;
+  color: white;
+}
+
+h1, h3, p {
+  background-color: #001aff;
+}
+
+h3::before {
+  color: black;
+}
+/*# sourceMappingURL=index.css.map */
