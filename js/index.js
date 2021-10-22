@@ -15,3 +15,17 @@ document.getElementById("shipping").innerHTML = "shipping : " + "$" + shipping ;
 document.getElementById("grandTotal").innerHTML = "GrandTotal : " + "$" + grandTotal;
 
 
+const Person= ((firstName, lastName, age, eyeColor) => {
+    this.firstName = firstName; 
+    this.lastName = lastName;
+    this.age = age;
+    this.eyeColor = eyeColor;
+    changeName =((name) => {
+      this.lastName = name;
+    });
+  })
+
+  let PersonName = new Person("ajay","sahani",24,"red");
+  console.log(PersonName); 
+
+
