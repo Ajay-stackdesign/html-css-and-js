@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        .cool{
+            color: orange;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">list kings</h1>
+    <h2 id="groceries">king groceries</h2>
+    <ul>
+        <li id="one" class="ramp">fresh pigs</li>
+        <li id="two" class="ramp">pig nuts</li>
+        <li id="three" class="ramp">honey </li>
+        <li id="four" class="ramp">blasamic vineger</li>
+    </ul>
+    <script>
+        let element = document.getElementsByClassName("ramp");
+        if(element.length > 2 ){
+            let length = element[2]
+            length.className = "cool"
+        }
+
+
+    </script>
+</body>
+</html>
