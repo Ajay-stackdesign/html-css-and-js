@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        let level = 2
+
+        switch (level) {
+            case 1:
+                msg = "good to see you";
+                break;
+
+            case 2:
+                msg = "good luck";
+                break;
+
+            case 3:
+                msg = "kay boltoy";
+                break;
+
+            default:
+                msg = "thik hai";
+                break
+
+        }
+        document.getElementById("demo").innerHTML = msg
+
+
+        const table = () => {
+            for (let i = 1; i <= 9; i++) {
+                for (let j = 5; j <= 5; j++) {
+                    let result = i * j;
+                    document.write(i, "*", j, "=",result)
+                }
+                document.write(" ")
+            }
+        }
+        table()
+
+        const addition = () => {
+            for (let i=1;i<=10;i++){
+                for (let j=3;j<=3;j++){
+                    let result = i+j;
+                    document.write("<br />")
+                    let add = (i,"+",j,"=",result)
+                    console.log("hi")
+                    document.getElementById("demo").innerHTML = add;
+                }
+                document.write("<br/> ")
+            }
+        }
+
+        addition()
+
+
+
+    </script>
+
+
+</body>
+
+</html>
