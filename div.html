@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // let smaller_number = 4;
+        // if(smaller_number<2){
+        //     msg = "number is bigger"
+        // }else{
+        //     msg = "number is smaller"
+        // }
+
+        // document.getElementById("demo").innerHTML = msg
+
+        const smaller_number = () => {
+            let number = 10;
+            if (number <= 10 ){
+                return "number is bigger"
+            }else{
+                return "number is bigger"
+            }
+        }
+
+        let num = smaller_number();
+        document.getElementById("demo").innerHTML = num;
+    </script>
+</body>
+</html>
