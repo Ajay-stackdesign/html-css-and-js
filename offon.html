@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="turnOn()" id="turnOn">turn on the light</button>
+    <img src="./bulonoff/bulfoff.png" alt="bolf on" id="image" />
+    <button onclick="turnOff()" id="turnOff">turn off the light</button>
+    <script>
+        const turnOn = () => {
+            document.getElementById("image").src="./bullonoff/bullon.png"
+            document.write("hi world")
+            console.log("hello")
+        }
+        const turnOff = () => {
+            document.getElementById("image").src="./bullonoff/bulloff.png"
+        }
+
+
+    </script>
+</body>
+</html>
