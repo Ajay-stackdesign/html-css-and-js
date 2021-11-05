@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cool{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <li id="one" class="hot">fresh pigs</li>
+    <li id="two" class="hot">pine nuts</li>
+    <li id="three" class="hot">honey</li>
+    <li id="four" class="hot">balsamic</li>
+    <script>
+        const check = () => {
+            let element  = document.getElementsByClassName("hot")
+            if(element.length>2){
+                let el  = element[1];
+                el.className="cool"
+                console.log("hi")
+                document.getElementById("one").innerHTML = "fresh vadapav";
+                let link = document.getElementById("two");
+                link.innerHTML = "<a href='www.google.com'>google</a>" + "samaso";
+            }
+        }
+
+        check();
+    </script>
+</body>
+</html>
